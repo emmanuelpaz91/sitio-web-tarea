@@ -38,9 +38,36 @@ body {
     position: relative;
   }
 
+  .carousel-item img {
+    max-height: 50vh; /* Limitar la altura de las imágenes al 50% de la altura de la ventana */
+    width: auto; /* Ancho automático para mantener la proporción */
+  }
+
+  .carousel-overlay-text {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 0 20px; /* Ajuste el espaciado lateral según sea necesario */
+  }
+
   @media (max-width: 768px) {
     /* Estilos para pantallas pequeñas (dispositivos móviles) */
     .row-height {
       height: auto; /* Altura automática para pantallas pequeñas */
     }
   }
+
+  .card {
+    background-color: #611e60;
+    color: white;
+  }
+
+  footer {
+    background-color: #611e60;
+  }
+
+  
